@@ -1,19 +1,18 @@
-# magento2-featured-products
+# m2-featured-products
+Copied from https://github.com/emizentech/magento2-featured-products/
+
+<h3>Notes:</h3>
+<ul>
+<li>Modified composer.json to make it compatible with Magento 2.0.5</li>
+<li>Modified phtml file to support custom css</li>
+<li>Added custom css</li>
+<li>Even the namespace is kept same</li>
+</ul>
 
 <h2>Composer Installation Instructions</h2>
-edit composer.json file of the Magento 2 project
-edit to the following in repositories section 
+Add GIT Repository to composer
 <pre>
-"repositories": [
-        {
-            "type": "composer",
-            "url": "https://repo.magento.com/"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/emizentech/magento2-featured-products/"
-        }
-    ],
+composer config repositories.apexdivision-m2-featured-products vcs https://github.com/Apex-Division/m2-featured-products/
 </pre>
 
 Since this package is in a development stage, you will need to change the minimum-stability as well to the composer.json file: -
@@ -24,7 +23,7 @@ Since this package is in a development stage, you will need to change the minimu
 After that, need to install this module as follows:
 <pre>
   composer require magento/magento-composer-installer
-  composer require emizentech/featuredwidget
+  composer require apexdivision/apexdivision-m2-featured-products
 </pre>
 
 
@@ -57,5 +56,3 @@ to Enable this module you need to follow these steps:
 	<pre>bin/magento setup:di:compile</pre>
 </li>
 </ul>
-
-
